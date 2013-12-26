@@ -8,12 +8,14 @@ Faisons en premier lieu un rapide tour de l'outil.
 
 ### Introduction
 
-Depuis janvier 2001, la société [JetBrains](http://www.jetbrains.com/) édite le logiciel [IntelliJ IDEA](http://www.jetbrains.com/idea/). Il s'agit d'un *EDI* (ou *IDE* en anglais), à savoir un *Environnement de Développement Intégré* (*Integrated Development Environment*), autrement dit un ensemble d'outils déstinés au développement logiciel. IDEA est ainsi à mettre au même niveau - toutes proportions gardées - d'[Eclipse](http://www.eclipse.org/) ou encore de [NetBeans](http://www.netbeans.org/).
+Depuis janvier 2001, la société [JetBrains](http://www.jetbrains.com/) édite le logiciel [IntelliJ IDEA](http://www.jetbrains.com/idea/). Il s'agit d'un *EDI* (ou *IDE* en anglais), à savoir un *Environnement de Développement Intégré* (*Integrated Development Environment*), autrement dit un ensemble d'outils déstiné au développement logiciel. IDEA est ainsi à mettre au même niveau - toutes proportions gardées - d'[Eclipse](http://www.eclipse.org/) ou encore de [NetBeans](http://www.netbeans.org/).
+
+Pour information, **IntelliJ** fait référence à la plateforme commune de JetBrains pour tous leurs outils de développement, IDEA étant l'EDI de développement Java. Il est donc plus juste de dire "je travaille avec IDEA" que "je travaille sur IntelliJ", bien que ce soit souvent la seconde phrase la plus courante.
 
 
 ### Versions et prix
 
-IDEA existe en deux versions : **Community** et **Ultimate**. Pour faire simple, la version **Community**, gratuite, est avant tout destinée au développement d'applications "lourdes" Java, Scala et Android. Dès qu'il s'agira de développer des applications web, il faudra se tourner vers l'édition **Ultimate**. Son prix, pour une licence personnelle, est de 179€.
+IDEA existe en deux versions : **Community** et **Ultimate**. Pour faire simple, la version **Community**, gratuite, est avant tout destinée au développement d'applications "lourdes" Java, Scala et Android. Dès qu'il s'agit de développer des applications web, il faut se tourner vers l'édition **Ultimate**. Son prix, pour une licence personnelle, est de 179€ (hors promotion ou prix de mise à jour).
 
 Un comparatif complet des deux éditions est visible [ici](http://www.jetbrains.com/idea/features/editions_comparison_matrix.html).
 
@@ -29,7 +31,7 @@ Je ne vais pas détailler ici toutes les fonctionnalités d'IDEA, il me faudrait
 La version **Community** gère nativement les langages suivants : Java, Scala, Groovy, Clojure et XML, XSD et DTD. Avec la version **Ultimate** s'ajoutent les langages dédiés au développement web, à savoir le HTML, CSS, JavaScript, CoffeeScript, ActionScript. Viennent également le support du Freemarker, de Velocity, du XSL, XPath, SQL, Ruby et JRuby, Python ou encore PHP.
 Certains de ces langages nécessitent toutefois l'ajout de plugins gratuits.
 
-Avec la version **Ultimate** vient également le support des frameworks les plus courants pour le développement autour de l'écosystème de la JVM ou du web. On citera par exemple Spring, Play! framework, JavaEE 6, GWT, Hibernate, Struts, Grails, Griffon, SasS, LESS, Rails, Django, Node.js, etc.
+Avec la version **Ultimate** vient également le support des frameworks les plus courants pour le développement autour de l'écosystème de la JVM ou du web. On citera par exemple Spring, Play! framework, JavaEE 6, GWT, Hibernate, Struts, Grails, Griffon, Sass, LESS, Rails, Django, Node.js, etc.
 
 #### Gestionnaires de sources
 
@@ -41,13 +43,13 @@ Les principaux outils de construction d'applications sont présents dans les deu
 
 #### Développement et autres fonctions
 
-Pour ce qui concerne le développement "pur", IDEA offre une excellente intégration des outils de tests (JUnit, TestNG, Spock ou encore Cucumber), un historique local des modifications de fichiers, une intéropérabilité avec Eclipse, ou encore un gestionnaire de contexte. Ce dernier permet de travailler sur un ticket JIRA (gestionnaire de tickets) par exemple et d'y associer un contexte. Ainsi, lorsque l'on rouvre un ticket JIRA sur lequel on a déjà commencé à travailler, IDEA va rouvrir les fichiers qui étaient ouverts lorsque j'ai fermé le contexte de ce ticket. Si vous êtes adeptes de Mylyn sur Eclipse, cette fonction devrait vous intéresser. Vous pouvez voir [ici](http://www.jetbrains.com/idea/features/tasks_and_context.html) pour plus de détails (en anglais).
+Pour ce qui concerne le développement à proprement parler, IDEA offre une excellente intégration des outils de tests (JUnit, TestNG, Spock ou encore Cucumber), un historique local des modifications de fichiers, une intéropérabilité avec Eclipse, ou encore un gestionnaire de contexte. Ce dernier permet de travailler sur un ticket JIRA (ou n'importe quel autre gestionnaire de tickets) et d'y associer un contexte. Ainsi, lorsque l'on rouvre un ticket JIRA sur lequel on avait déjà commencé à travailler, IDEA va rouvrir les fichiers qui étaient ouverts lorsque le contexte de ce ticket avait été précédemment fermé. Si vous êtes adeptes de [Mylyn](http://www.eclipse.org/mylyn/) sur Eclipse, cette fonction devrait vous intéresser. Vous pouvez voir [ici](http://www.jetbrains.com/idea/features/tasks_and_context.html) pour plus de détails (en anglais).
 A ce propos, IDEA s'interface sans problème avec les plus populaires des systèmes de tickets : JIRA, YouTrack, Lighthouse, GitHub, Redmine, Trac, etc.
 
 Si vous possédez la version **Ultimate**, vous disposerez également d'un gestionnaire complet de base de données (éditeur SQL, définition de schémas, diagrammes, etc.), d'un designeur UML, d'outils de couverture de code, du "Structural Search and Replace" (voir le chapitre dédié plus loin).
 
 
-L'intégralité des fonctionnalités d'IDEA est à trouver sur la [page dédiée](http://www.jetbrains.com/idea/features/index.html).
+L'intégralité des fonctionnalités d'IDEA est à trouver sur [cette page](http://www.jetbrains.com/idea/features/index.html).
 
 
 
@@ -57,15 +59,15 @@ Comme à chaque fin d'année, JetBrains publie sa nouvelle version majeure de so
 
 ### Android Studio
 
-Les développeurs d'applications mobiles pour Android vont être contents. Annoncé lors du Google I/O de 2013, IDEA est désormais l'EDI standard pour le développement d'applications mobiles pour l'OS de Google.
+Les développeurs d'applications mobiles pour Android vont être contents. Annoncé lors du [Google I/O de 2013](https://developers.google.com/events/io/), IDEA est désormais l'EDI standard pour le développement d'applications mobiles pour l'OS de Google.
 
 Cet Android Studio se compose de différents éléments :
 
-* Meilleure intégration de [Gradle](http://www.gradle.org/), l'outil de construction des applications Android.
 * Éditeur visuel pour la partie graphique des applications.
 * Émulateur d'appareils Android.
+* Meilleure intégration de [Gradle](http://www.gradle.org/), l'outil de construction des applications Android.
 * Éditeur XML dédié à Android.
-* Outil d'inspection Lint, pour analyser la qualité du code 
+* Outil d'inspection Lint, pour analyser la qualité du code.
 
 Autre bonne nouvelle, l'Android Studio est proposé dès la version **Community**.
 
@@ -82,7 +84,7 @@ La 13e édition d'IDEA dispose d'un support complet des spécifications JavaEE 7
 * Présence des annotations utilisées pour les *Web Sockets*.
 * Intégration des nouvelles versions des serveurs d'applications : Glassfish 4.0, WildFly 8, Tomcat 8, etc.
 
-Pour ce qui est de Spring, le support déjà bien présent dans les précédentes versions est amélioré. On y retrouvera une meilleure gestion de Spring MVC permettant une navigation aisée entre les controlleurs et les pages HTML associées, la détection des contextes non mappés et annotés avec @Context, ou encore 
+Pour ce qui est de Spring, le support déjà bien présent dans les précédentes versions est encore amélioré. On y retrouve une meilleure gestion de Spring MVC permettant une navigation aisée entre les controlleurs et les pages HTML associées, la détection des contextes non mappés et annotés avec @Context, ou encore des améliorations sur la performances, la documentation ou les fenêtres spécifiques à Spring (telle que celle de la vue des beans).
 
 
 ### Langages alternatifs
@@ -96,12 +98,12 @@ Concernant Scala, IDEA offre le support de l'outil [sbt](http://www.scala-sbt.or
 
 ### Développement web
 
-Vous l'aurez deviné, les fonctionnalités propres au développement web ne sont disponibles que pour la version **Ultimate**. Les nouveautés sont celles-ci :
+Vous l'aurez deviné, les fonctionnalités propres au développement web ne sont disponibles que pour la version **Ultimate**. Les nouveautés sont entre autres :
 
 * Débogeur JavaScript amélioré, en particulier pour Google Chrome et [Node.js](http://nodejs.org/).
 * Amélioration du refactoring CSS.
 * Support de la librairie de test [Karma](https://github.com/karma-runner/karma).
-* Support de la verison 1.0 de [Dart](https://www.dartlang.org/).
+* Support de la version 1.0 de [Dart](https://www.dartlang.org/).
 * Début de l'intégration du futur standard des [composants web](http://www.w3.org/TR/components-intro/).
 * Gestion des langages de *templating* [Moustache](http://mustache.github.io/) ou [Handlebars](http://handlebarsjs.com/).
 
@@ -117,14 +119,16 @@ Dans l'optique d'avoir tout sous la main dans un même outil, IDEA intègre dés
 
 Pour améliorer la productivité, la nouvelle fonction de recherche permet d'accéder à pratiquement tout à travers la même fenêtre : classe, méthode, action, paramétrage, etc.
 
-Retrouvez toutes ces nouveautés, et bien plus encore sur la [page dédiée du site de JetBrains](http://www.jetbrains.com/idea/whatsnew/index.html).
+Vous pouvez retrouver toutes ces nouveautés, et bien plus encore sur la [page dédiée du site de JetBrains](http://www.jetbrains.com/idea/whatsnew/index.html).
 
 
 ## Ce qui fait la force d'IntelliJ
 
-On reproche souvent à IntelliJ IDEA d'être payant et d'avoir un prix relativement élevé. Une licence unique coûte 179€ si elle est personnelle, 449€ s'il s'agit d'une licence d'entreprise. Toutefois, ceux qui ont vraiment goûté à cet EDI n'ont pas envie de faire machine arrière et ne peuvent plus se passer de l'outil. Voyons dans ce châpitre quelques pistes permettant d'expliquer ceci.
+On reproche souvent à IntelliJ IDEA d'être payant et d'avoir un prix relativement élevé. Une licence unique coûte 179€ si elle est personnelle, 449€ s'il s'agit d'une licence d'entreprise. Pour cette dernière, cela représente généralement moins d'une journée de prestation et cela risque de lui en faire gagner bien plus.
 
-### Autocomplétion
+Ceux qui ont vraiment goûté à cet EDI, comme moi, n'ont plus envie de faire machine arrière et ne peuvent plus se passer de l'outil. Voyons dans ce châpitre quelques pistes permettant d'expliquer ceci.
+
+### L'autocomplétion
 
 L'autocomplétion est une fonctionnalité absolument indispensable à tout bon outil de développement. IDEA non seulement n'échappe pas à la règle, mais propose sans aucun doute la plus puissante dans sa catégorie. Tout d'abord, la complétion "basique" qui consiste à aider le développeur à écrire son code Java fonctionne sans faille. Mais avec IDEA, elle va plus loin. Elle est capable d'aider à compléter le nom des variables ou des classes par exemple. Elle prend également en considération le contexte actuel, ne proposant ainsi que les types qui sont compatibles dans le contexte de la ligne de code courante. IntelliJ IDEA peut ainsi aider le développeur à compléter les requêtes HQL présentes dans des chaînes de caractères dans le code Java.
 
@@ -181,6 +185,9 @@ Autre chose : les raccourcis clavier. On ne peut pas travailler efficacement sur
 **IMAGE** http://www.ptxstore.com/jetbrains/product_info.php?products_id=1638
 
 Il existe aussi le raccourci "universel", Ctrl + Shift + A, qui vous permet d'exécuter n'importe quelle action en tapant simplement son nom. Enfin, je vous recommande le plugin "[Key Promoter](http://plugins.jetbrains.com/plugin/1003?pr=idea)" qui détecte quand vous réalisez une action alors qu'un raccourci clavier existe. Dans pareille situation, le plugin va afficher une popup vous indiquant le raccourci à utiliser pour gagner du temps. C'est très pratique.
+
+Si certaines personnes de votre équipe travaillent toujours sur Eclipse (les pauvres !), alors il faudra peut-être penser à ajouter [le plugin de formattage d'Eclipse](http://plugins.jetbrains.com/plugin/6546), ce qui vous assurera d'avoir les mêmes conventions que vos camarades. A noter aussi qu'il aussi est possible [de demander à IDEA de sauvegarder les méta-données du projet au format Eclipse](http://www.jetbrains.com/idea/features/eclipse_java.html) (fichier *.classpath*) plutôt qu'IDEA (fichier *.iml*).
+
 
 Quoiqu'il en soit, si vous vous sentez perdus, n'hésitez pas à consulter la [F.A.Q.](http://java.developpez.com/faq/intellijidea) ou [le forum dédié](http://www.developpez.net/forums/f1871/java/edi-outils-java/autres-edi/intellij/) de Developpez.com.
 
