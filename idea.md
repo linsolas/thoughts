@@ -48,6 +48,8 @@ A ce propos, IDEA s'interface sans problème avec les plus populaires des systè
 
 Si vous possédez la version **Ultimate**, vous disposerez également d'un gestionnaire complet de base de données (éditeur SQL, définition de schémas, diagrammes, etc.), d'un designeur UML, d'outils de couverture de code, du "Structural Search and Replace" (voir le chapitre dédié plus loin).
 
+![Il est possible de générer le diagramme des tables grâce à IDEA](http://www.jetbrains.com/idea/features/screenshots/database_uml.png "Il est possible de générer le diagramme des tables grâce à IDEA")
+
 
 L'intégralité des fonctionnalités d'IDEA est à trouver sur [cette page](http://www.jetbrains.com/idea/features/index.html).
 
@@ -88,7 +90,7 @@ La 13e édition d'IDEA dispose d'un support complet des spécifications JavaEE 7
 
 ![Client REST intégré](http://www.jetbrains.com/idea/whatsnew/img/13/rest_client.png "Client REST intégré")
 
-Pour ce qui est de Spring, le support déjà bien présent dans les précédentes versions est encore amélioré. On y retrouve une meilleure gestion de Spring MVC permettant une navigation aisée entre les controlleurs et les pages HTML associées, la détection des contextes non mappés et annotés avec @Context, ou encore des améliorations sur la performances, la documentation ou les fenêtres spécifiques à Spring (telle que celle de la vue des beans).
+Pour ce qui est de Spring, le support déjà bien présent dans les précédentes versions est encore amélioré. On y retrouve une meilleure gestion de Spring MVC permettant une navigation aisée entre les controlleurs et les pages HTML associées, la détection des contextes non mappés et annotés avec ```@Context```, ou encore des améliorations sur la performances, la documentation ou les fenêtres spécifiques à Spring (telle que celle de la vue des beans).
 
 
 ### Langages alternatifs
@@ -97,7 +99,7 @@ Déjà bien supportés dans la précédente version, le support pour Scala ou Gr
 
 Pour Groovy, différentes fonctionnalités de refactoring ont été mises en place, comme l'introduction de variables ou de constantes. IDEA propose désormais la possibilité de créer des tests avec la librairie [Spock](https://code.google.com/p/spock/). Différents nouveaux inspecteurs ont également été introduits.
 
-Concernant Scala, IDEA offre le support de l'outil [sbt](http://www.scala-sbt.org/), des options de réorganisation du code ou encore la génération de méthodes de base (telles que *hashCode* ou *equals*).
+Concernant Scala, IDEA offre le support de l'outil [sbt](http://www.scala-sbt.org/), des options de réorganisation du code ou encore la génération de méthodes de base (telles que ```hashCode``` ou ```equals```).
 
 ![Réarrangeur de code Scala](http://www.jetbrains.com/idea/whatsnew/img/13/scala_rearranger.png "Réarrangeur de code Scala")
 
@@ -166,11 +168,11 @@ Il existe plusieurs centaines d'inspections disponibles dans IDEA, difficile de 
 
 ![Un exemple de code potentiellement erroné détecté par IDEA](http://www.jetbrains.com/idea/features/screenshots/code_analysis_dead.png "Un exemple de code potentiellement erroné détecté par IDEA")
 
-Il est toujours possible d'exécuter une inspection sur l'ensemble du projet, et parfois même de faire exécuter automatiquement la correction si celle-ci existe. Par exemple, je peux demander à IDEA tous les endroits où j'ai un ```size() == 0``` qui pourrait être remplacé par un ```isEmpty()```. IDEA va alors me lister tous les endroits où il trouve ```uneListe.size() == 0```, mais aussi là où il va trouver ```uneListe.size() > 0``` et me proposer de le remplacer par un ```uneListe.isEmpty()``` (ou ```!uneListe.isEmpty()``` dane le deuxième cas). Tout cela en un seul clic !
+Il est toujours possible d'exécuter une inspection sur l'ensemble du projet, et parfois même de faire exécuter automatiquement la correction si celle-ci existe. Par exemple, je peux demander à IDEA tous les endroits où j'ai un ```size() == 0``` qui pourrait être remplacé par un ```isEmpty()```. IDEA va alors me lister tous les endroits où il trouve ```uneListe.size() == 0```, mais aussi là où il va trouver ```uneListe.size() > 0``` et me proposer de le remplacer par un ```uneListe.isEmpty()``` (ou ```!uneListe.isEmpty()``` dans le deuxième cas). Tout cela en un seul clic !
 
 ![On peut lancer toutes les inspections d'un coup sur l'ensemble du projet](http://www.jetbrains.com/idea/features/screenshots/code_analysis_batch.png "On peut lancer toutes les inspections d'un coup sur l'ensemble du projet")
 
-Avec tout cela, IDEA va devenir votre ami préféré pour écrire du joli code bien propre...
+IDEA va devenir votre ami préféré pour écrire du joli code bien propre...
 
 
 ### Outils de refactoring
@@ -214,11 +216,11 @@ Tout d'abord, il faut persévérer un peu. C'est vrai qu'il est parfois destabil
 
 Premier point : la vue "Workspace" d'Eclipse disparait. IDEA ne gère qu'un seul projet à la fois par fenêtre (il est toutefois possible d'ouvrir autant de fenêtre d'IDEA que voulu). Finalement, ce n'est guère gênant, sauf si on a l'habitude de travailler sur dix projets *en même temps* (mais là, il y a sans doute un problème, non ?).
 
-Autre chose : les raccourcis clavier. On ne peut pas travailler efficacement sur un outil sans en connaître les raccourcis clavier, du moins les principaux. IDEA propose une option pour faire correspondre autant que possible les raccourcis claviers à ceux d'Eclipse ou de NetBeans. Pour cela, il faut aller dans *Settings > Keymap* puis choisir *Eclipse* ou *NetBeans* dans le sélecteur *Keymaps*. Toutefois, je vous conseille vivement de laisser les raccourcis par défaut et de les apprendre. Pour vous aider, vous pouvez télécharger et imprimer un [pense-bête](http://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf) ([la version pour Mac](http://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf)) ou pourquoi pas vous [acheter un t-shirt](http://www.ptxstore.com/jetbrains/product_info.php?products_id=1638).
+Autre chose : les raccourcis clavier. On ne peut pas travailler efficacement sur un outil sans en connaître les raccourcis clavier, du moins les principaux. IDEA propose une option pour faire correspondre autant que possible les raccourcis claviers à ceux d'Eclipse ou de NetBeans. Pour cela, il faut aller dans ```Settings > Keymap``` puis choisir *Eclipse* ou *NetBeans* dans le sélecteur ```Keymaps```. Toutefois, je vous conseille vivement de laisser les raccourcis par défaut et de les apprendre. Pour vous aider, vous pouvez télécharger et imprimer un [pense-bête](http://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf) ([la version pour Mac](http://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf)) ou pourquoi pas vous [acheter un t-shirt](http://www.ptxstore.com/jetbrains/product_info.php?products_id=1638).
 
 ![T-shirt JetBrains](http://www.ptxstore.com/jetbrains/images/CUJB12S-M10.jpg "T-shirt JetBrains")
 
-Il existe aussi le raccourci "universel", Ctrl + Shift + A, qui vous permet d'exécuter n'importe quelle action en tapant simplement son nom. Enfin, je vous recommande le plugin "[Key Promoter](http://plugins.jetbrains.com/plugin/1003?pr=idea)" qui détecte quand vous réalisez une action alors qu'un raccourci clavier existe. Dans pareille situation, le plugin va afficher une popup vous indiquant le raccourci à utiliser pour gagner du temps. C'est très pratique.
+Il existe aussi le raccourci "universel", ```Ctrl + Shift + A```, qui vous permet d'exécuter n'importe quelle action en tapant simplement son nom. Enfin, je vous recommande le plugin "[Key Promoter](http://plugins.jetbrains.com/plugin/1003?pr=idea)" qui détecte quand vous réalisez une action alors qu'un raccourci clavier existe. Dans pareille situation, le plugin va afficher une popup vous indiquant le raccourci à utiliser pour gagner du temps. C'est très pratique.
 
 Si certaines personnes de votre équipe travaillent toujours sur Eclipse (les pauvres !), alors il faudra peut-être penser à ajouter [le plugin de formattage d'Eclipse](http://plugins.jetbrains.com/plugin/6546), ce qui vous assurera d'avoir les mêmes conventions que vos camarades. A noter aussi qu'il aussi est possible [de demander à IDEA de sauvegarder les méta-données du projet au format Eclipse](http://www.jetbrains.com/idea/features/eclipse_java.html) (fichier ```.classpath```) plutôt qu'IDEA (fichier ```*.iml```).
 
@@ -236,8 +238,12 @@ Si vous possédez déjà une version précédente de l'outil, il faudra sans dou
 Si vous n'avez encore jamais mis les mains sur cet outil, alors il ne faut vraiment pas manquer l'occasion d'y jeter un oeil, soit avec la version **Community**, soit avec la version d'essai de 30 jours de la version **Ultimate**.
 
 
+## Remerciements
 
-### Références
+Je tiens à remercier JetBrains pour leur aide et leur magnifique outil, ainsi que la communauté de Developpez.com. Je remercie également **XXX** pour leur relecture attentive et leurs conseils.
+
+
+## Références
 
 * [Site officiel](http://www.jetbrains.com/idea/)
 * [Détails des fonctionnalités supportées par IDEA](http://www.jetbrains.com/idea/features/index.html)
