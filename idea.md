@@ -61,6 +61,8 @@ Comme à chaque fin d'année, JetBrains publie sa nouvelle version majeure de so
 
 Les développeurs d'applications mobiles pour Android vont être contents. Annoncé lors du [Google I/O de 2013](https://developers.google.com/events/io/), IDEA est désormais l'EDI standard pour le développement d'applications mobiles pour l'OS de Google.
 
+![Android Studio](http://www.jetbrains.com/idea/whatsnew/img/13/android_multiple_devices_preview.png "Andoid Studio")
+
 Cet Android Studio se compose de différents éléments :
 
 * Éditeur visuel pour la partie graphique des applications.
@@ -84,6 +86,8 @@ La 13e édition d'IDEA dispose d'un support complet des spécifications JavaEE 7
 * Présence des annotations utilisées pour les *Web Sockets*.
 * Intégration des nouvelles versions des serveurs d'applications : Glassfish 4.0, WildFly 8, Tomcat 8, etc.
 
+![Client REST intégré](http://www.jetbrains.com/idea/whatsnew/img/13/rest_client.png "Client REST intégré")
+
 Pour ce qui est de Spring, le support déjà bien présent dans les précédentes versions est encore amélioré. On y retrouve une meilleure gestion de Spring MVC permettant une navigation aisée entre les controlleurs et les pages HTML associées, la détection des contextes non mappés et annotés avec @Context, ou encore des améliorations sur la performances, la documentation ou les fenêtres spécifiques à Spring (telle que celle de la vue des beans).
 
 
@@ -95,6 +99,7 @@ Pour Groovy, différentes fonctionnalités de refactoring ont été mises en pla
 
 Concernant Scala, IDEA offre le support de l'outil [sbt](http://www.scala-sbt.org/), des options de réorganisation du code ou encore la génération de méthodes de base (telles que *hashCode* ou *equals*).
 
+![Réarrangeur de code Scala](http://www.jetbrains.com/idea/whatsnew/img/13/scala_rearranger.png "Réarrangeur de code Scala")
 
 ### Développement web
 
@@ -117,7 +122,11 @@ Concernant l'interface graphique, différentes améliorations ont été apporté
 
 Dans l'optique d'avoir tout sous la main dans un même outil, IDEA intègre désormais la possibilité d'exécuter des commandes shell localement ou à distance (*via* une connexion SSH) directement par la vue "Ligne de commandes".
 
+![Un terminal est intégré à IDEA](http://www.jetbrains.com/idea/whatsnew/img/13/ij13_terminal.png "Un terminal est intégré à IDEA")
+
 Pour améliorer la productivité, la nouvelle fonction de recherche permet d'accéder à pratiquement tout à travers la même fenêtre : classe, méthode, action, paramétrage, etc.
+
+![Une recherche vraiment complète](http://www.jetbrains.com/idea/whatsnew/img/13/ij13_search.png "Une recherche vraiment complète")
 
 Vous pouvez retrouver toutes ces nouveautés, et bien plus encore sur la [page dédiée du site de JetBrains](http://www.jetbrains.com/idea/whatsnew/index.html).
 
@@ -132,6 +141,8 @@ Ceux qui ont vraiment goûté à cet EDI, comme moi, n'ont plus envie de faire m
 
 L'autocomplétion est une fonctionnalité absolument indispensable à tout bon outil de développement. IDEA non seulement n'échappe pas à la règle, mais propose sans aucun doute la plus puissante dans sa catégorie. Tout d'abord, la complétion "basique" qui consiste à aider le développeur à écrire son code Java fonctionne sans faille. Mais avec IDEA, elle va plus loin. Elle est capable d'aider à compléter le nom des variables ou des classes par exemple. Elle prend également en considération le contexte actuel, ne proposant ainsi que les types qui sont compatibles dans le contexte de la ligne de code courante. IntelliJ IDEA peut ainsi aider le développeur à compléter les requêtes HQL présentes dans des chaînes de caractères dans le code Java.
 
+![Une autocomplétion vraiment performante](http://www.jetbrains.com/idea/features/screenshots/database_injection.png "Une autocomplétion vraiment performante")
+
 La puissance de l'auto-complétion ne se borne pas au langage Java, puisqu'il supporte sans broncher les langages web - HTML, CSS ou JavaScript - le XML (il est par exemple capable de compléter les noms des classes Java dans les fichiers Spring), Scala, Groovy, etc. En fait, il n'y a pratiquement aucun endroit où IDEA n'est pas à même de proposer une auto-complétion efficace.
 
 Si le sujet vous intéresse, vous pouvez lire l'article [20 code completions in IntelliJ IDEA](http://jetbrains.dzone.com/articles/top-20-code-completions-in-intellij-idea) (en anglais), ou encore visualiser la vidéo disponible sur la page du site de JetBrains consacrée à l'[auto-complétion](http://www.jetbrains.com/idea/features/code_completion.html).
@@ -143,15 +154,23 @@ IntelliJ IDEA analyse en temps réel et en permanence votre code, à la recherch
 
 Il existe plusieurs centaines d'inspections disponibles dans IDEA, difficile de les résumer ici, mais en voici quelques exemples :
 
-* Ajout d'un test de non nullité, permettant d'éviter l'apparition de NullPointerException.
+* Ajout d'un test de non nullité, permettant d'éviter l'apparition de ```NullPointerException```.
 * Une condition est toujours fausse (par exemple en testant la nullité d'un objet que l'on a initialisé plus tôt), mettant ainsi en avant du code mort.
 * Possibilité de simplifier des expressions booléennes.
 * Erreur dans la définition d'une entité Hibernate, par exemple des champs non présents dans la base de données.
-* Code inutilisé : imports, variables globales, méthodes privées, propriété d'un fichier *.properties* inutilisée dans l'application, etc.
-* Copie manuelle de tableaux.
-* Dépendances dupliquées dans les pom.xml de Maven.
+* Code inutilisé : imports, variables globales, méthodes privées, propriété d'un fichier ```.properties``` inutilisée dans l'application, etc.
+* Copie manuelle de tableaux non optimisée.
+* Dépendances dupliquées dans les ```pom.xml``` de Maven.
 * Vérification de la validité des sélecteurs utilisés dans jQuery.
 * Détection de problèmes dans la configuration des beans de Spring.
+
+![Un exemple de code potentiellement erroné détecté par IDEA](http://www.jetbrains.com/idea/features/screenshots/code_analysis_dead.png "Un exemple de code potentiellement erroné détecté par IDEA")
+
+Il est toujours possible d'exécuter une inspection sur l'ensemble du projet, et parfois même de faire exécuter automatiquement la correction si celle-ci existe. Par exemple, je peux demander à IDEA tous les endroits où j'ai un ```size() == 0``` qui pourrait être remplacé par un ```isEmpty()```. IDEA va alors me lister tous les endroits où il trouve ```uneListe.size() == 0```, mais aussi là où il va trouver ```uneListe.size() > 0``` et me proposer de le remplacer par un ```uneListe.isEmpty()``` (ou ```!uneListe.isEmpty()``` dane le deuxième cas). Tout cela en un seul clic !
+
+![On peut lancer toutes les inspections d'un coup sur l'ensemble du projet](http://www.jetbrains.com/idea/features/screenshots/code_analysis_batch.png "On peut lancer toutes les inspections d'un coup sur l'ensemble du projet")
+
+Avec tout cela, IDEA va devenir votre ami préféré pour écrire du joli code bien propre...
 
 
 ### Outils de refactoring
@@ -169,8 +188,23 @@ Vous trouverez plus d'informations sur le refactoring sur [cette page](http://ww
 
 ### SSR, ou Structural Search and Replace
 
-### D'autres fonctionnalités avancées
+Le *Structural Search and Replace* (autrement dit la recherche et remplacement structurels) est un outil qui n'est pas toujours facile à manier mais diablement efficace. Il n'est d'ailleurs disponible que dans la version **Ultimate**.
 
+Il est parfois nécessaire de faire une recherche un peu complexe dans tout le code de son application. Cela peut-être une classe (```class A implements B { }```), une déclaration (```a = b```), un commentaire (```// TODO A faire```) ou une expression (```new MaClasse();```). Bref, des choses qu'une simple recherche n'est pas capable de trouver. Et bien c'est le rôle du SSR. On ne lui donne pas un texte à chercher, mais plutôt un *template*.
+Prennons un exemple. Je souhaite utiliser la librairie [AssertJ](https://github.com/joel-costigliola/assertj-core) pour rendre mes assertions plus expressives dans mes tests unitaires. Avec JUnit, mon assertion s'écrit ```assertEquals(42, unEntier)```, alors qu'avec AssertJ, ce sera ```assertThat(unEntier).isEqualTo(42)```. Si je souhaite faire un changement automatique de toutes mes assertions en une seule fois, je vais avoir du mal avec une recherche normale. Avec le SSR, je peux faire cela en un clin d'oeil. Tout d'abord, je saisis le template suivant :
+
+	assertEquals($a$, $b$);
+
+Vous noterez l'utilisation de variables ```$a$``` et ```$b$```. Ensuite, je lui indique par quoi remplacer :
+
+	assertThat($b$).isEqualTo($a$);
+
+Et le tour est joué ! Pour être sûr de ne pas faire d'erreur, IDEA me montre une prévisualisation des changements avant de les appliquer.
+
+Pour vous aider, il existe un certain nombre de templates prédéfinis, sur lesquels il sera plus prudent de partir pour arriver à ses fins.
+
+
+Vous pouvez jeter un oeil sur [la documentation du SSR](http://www.jetbrains.com/idea/documentation/ssr.html) (en anglais).
 
 ## Petits conseils pour bien migrer vers IntelliJ IDEA
 
@@ -180,13 +214,13 @@ Tout d'abord, il faut persévérer un peu. C'est vrai qu'il est parfois destabil
 
 Premier point : la vue "Workspace" d'Eclipse disparait. IDEA ne gère qu'un seul projet à la fois par fenêtre (il est toutefois possible d'ouvrir autant de fenêtre d'IDEA que voulu). Finalement, ce n'est guère gênant, sauf si on a l'habitude de travailler sur dix projets *en même temps* (mais là, il y a sans doute un problème, non ?).
 
-Autre chose : les raccourcis clavier. On ne peut pas travailler efficacement sur un outil sans en connaître les raccourcis clavier, du moins les principaux. IDEA propose une option pour faire correspondre autant que possible les raccourcis claviers à ceux d'Eclipse ou de NetBeans. Pour cela, il faut aller dans *Settings > Keymap* puis choisir *Eclipse* ou *NetBeans* dans le sélecteur *Keymaps*. Toutefois, je vous conseille vivement de laisser les raccourcis par défaut et de les apprendre. Pour vous aider, vous pouvez télécharger et imprimer un [pense-bête](http://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf) ou pourquoi pas vous [acheter un t-shirt](http://www.ptxstore.com/jetbrains/product_info.php?products_id=1638).
+Autre chose : les raccourcis clavier. On ne peut pas travailler efficacement sur un outil sans en connaître les raccourcis clavier, du moins les principaux. IDEA propose une option pour faire correspondre autant que possible les raccourcis claviers à ceux d'Eclipse ou de NetBeans. Pour cela, il faut aller dans *Settings > Keymap* puis choisir *Eclipse* ou *NetBeans* dans le sélecteur *Keymaps*. Toutefois, je vous conseille vivement de laisser les raccourcis par défaut et de les apprendre. Pour vous aider, vous pouvez télécharger et imprimer un [pense-bête](http://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf) ([la version pour Mac](http://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf)) ou pourquoi pas vous [acheter un t-shirt](http://www.ptxstore.com/jetbrains/product_info.php?products_id=1638).
 
-**IMAGE** http://www.ptxstore.com/jetbrains/product_info.php?products_id=1638
+![T-shirt JetBrains](http://www.ptxstore.com/jetbrains/images/CUJB12S-M10.jpg "T-shirt JetBrains")
 
 Il existe aussi le raccourci "universel", Ctrl + Shift + A, qui vous permet d'exécuter n'importe quelle action en tapant simplement son nom. Enfin, je vous recommande le plugin "[Key Promoter](http://plugins.jetbrains.com/plugin/1003?pr=idea)" qui détecte quand vous réalisez une action alors qu'un raccourci clavier existe. Dans pareille situation, le plugin va afficher une popup vous indiquant le raccourci à utiliser pour gagner du temps. C'est très pratique.
 
-Si certaines personnes de votre équipe travaillent toujours sur Eclipse (les pauvres !), alors il faudra peut-être penser à ajouter [le plugin de formattage d'Eclipse](http://plugins.jetbrains.com/plugin/6546), ce qui vous assurera d'avoir les mêmes conventions que vos camarades. A noter aussi qu'il aussi est possible [de demander à IDEA de sauvegarder les méta-données du projet au format Eclipse](http://www.jetbrains.com/idea/features/eclipse_java.html) (fichier *.classpath*) plutôt qu'IDEA (fichier *.iml*).
+Si certaines personnes de votre équipe travaillent toujours sur Eclipse (les pauvres !), alors il faudra peut-être penser à ajouter [le plugin de formattage d'Eclipse](http://plugins.jetbrains.com/plugin/6546), ce qui vous assurera d'avoir les mêmes conventions que vos camarades. A noter aussi qu'il aussi est possible [de demander à IDEA de sauvegarder les méta-données du projet au format Eclipse](http://www.jetbrains.com/idea/features/eclipse_java.html) (fichier ```.classpath```) plutôt qu'IDEA (fichier ```*.iml```).
 
 
 Quoiqu'il en soit, si vous vous sentez perdus, n'hésitez pas à consulter la [F.A.Q.](http://java.developpez.com/faq/intellijidea) ou [le forum dédié](http://www.developpez.net/forums/f1871/java/edi-outils-java/autres-edi/intellij/) de Developpez.com.
@@ -205,12 +239,11 @@ Si vous n'avez encore jamais mis les mains sur cet outil, alors il ne faut vraim
 
 ### Références
 
-* [Site officiel]()
+* [Site officiel](http://www.jetbrains.com/idea/)
 * [Détails des fonctionnalités supportées par IDEA](http://www.jetbrains.com/idea/features/index.html)
-* [FAQ d'IntelliJ IDEA](http://java.developpez.com/faq/intellijidea)
-* [Article de présentation de la v12]()
+* [Détails des nouveautés de la version 13](http://www.jetbrains.com/idea/whatsnew/index.html)
+* [FAQ d'IntelliJ IDEA sur Developpez.com](http://java.developpez.com/faq/intellijidea)
+* [Article de présentation de la v12](http://damienrieu.developpez.com/tutoriel/java/nouveautes-intellij-12/)
 * [Forum IntelliJ de Developpez.com](http://www.developpez.net/forums/f1871/java/edi-outils-java/autres-edi/intellij/)
-* []()
-* []()
 
 
