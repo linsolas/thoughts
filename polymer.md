@@ -1,5 +1,4 @@
-
-Lors de [Devoxx France 2014](http://www.devoxx.fr), j'ai présenté avec mon ami [Julien Jakubowski](https://twitter.com/jak78) un "Tools In Action" sur la création de web component avec Google Polymer](http://cfp.devoxx.fr/devoxxfr2014/talk/HXP-745/Cr%C3%A9ons%20un%20web%20component%20avec%20Polymer).
+Lors de [Devoxx France 2014](http://www.devoxx.fr), j'ai présenté avec mon ami [Julien Jakubowski](https://twitter.com/jak78) un "Tools In Action" sur la [création de web component avec Google Polymer](http://cfp.devoxx.fr/devoxxfr2014/talk/HXP-745/Cr%C3%A9ons%20un%20web%20component%20avec%20Polymer).
 
 Peut-être que vous n'avez pas eu la chance de venir y assister. Je vous propose donc une initiation à Google Polymer et aux web components.
 
