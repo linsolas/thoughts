@@ -46,7 +46,7 @@ Mais les web components sont en réalité [un standard en cours d'élaboration p
 
 Ces standards sont toujours à l'étude, mais il existe quelques implémentations pour pouvoir jouer dès à présent avec les web components. Celui qui va nous intéresser plus particulièrement c'est celle de Google, à savoir [Polymer](http://www.polymer-project.org/).
 
-!["Google Polymer" http://www.polymer-project.org/images/logos/p-logo.svg](Google Polymer)
+![Google Polymer](http://www.polymer-project.org/images/logos/p-logo.svg "Google Polymer")
 
 
 # Let's start!
