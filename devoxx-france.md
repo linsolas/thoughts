@@ -2,10 +2,10 @@ Devoxx France 2014
 ==================
 
 Habituellement, pendant et juste après un Devoxx, je pourri gentillement mon blog avec des billets expliquant en détail les sessions que j'ai suivi, ainsi qu'un billet récapitulatif.
-Cette année, je vais me contenter du billet récapitulatif, et avec du retard en plus ! Tout se perd...
+Cette année, je vais me contenter du billet récapitulatif, et avec prequ'un mois de retard en plus ! Tout se perd...
 
 A vrai dire, tout cela a une raison bien précise : je n'ai vu presque aucune session, car la Société Générale était sponsor cette année, et ça m'a pris un temps fou !
-Commençons tout d'abord justement par ces sessions.
+Commençons tout d'abord justement par ces quelques sessions.
 
 
 # Conférences
@@ -30,6 +30,7 @@ Une session intéressante, mais qui, j'ai l'impression, donnait plutôt envie de
 [Thierry Chatel](http://cfp.devoxx.fr/devoxxfr2014/speaker/7c0e3659c3e1946a39a7b45f633a3a6f52cab4c6/Thierry%20Chatel), formateur sur AngularJS, nous propose une session dédiée aux bonnes pratiques lorsque l'on développe une application avec AngularJS, ainsi que les différentes choses à éviter.
 J'ai été déçu pour deux raisons. Déjà, Thierry manquait un peu d'énergie comme présentateur, mais surtout cela s'est borné à une énumération de bonnes ou mauvaises pratiques. C'est bien, mais il manquait vraiment du concret, des exemples de code. Je crois avoir attendu 15 minutes avant de voir la première ligne de code Angular ! C'est dommage, le sujet était forcément très intéressant et aurait mérité mieux. En tout cas, ça m'a rassuré sur ma pratique d'Angular, qui n'est pas si pourri que ça :o)
 
+
 ## [Etendre le Web avec les Web Components](http://cfp.devoxx.fr/devoxxfr2014/talk/URP-539/Etendre%20le%20Web%20avec%20les%20Web%20Components)
 ![2.5/5](/images/note-2.5.png "2.5/5")
 
@@ -44,6 +45,22 @@ J'ai cependant trouvé que la présentation a beaucoup (trop ?) tourné autour d
 Une présentation décaléee faite par [Eric Lefevre-Ardant](http://cfp.devoxx.fr/devoxxfr2014/speaker/fe056ad4746a010de60b106afd60c075031d8cd3/Eric%20Lefevre-Ardant) et [Cyrille Martraire](http://cfp.devoxx.fr/devoxxfr2014/speaker/0499a99ad2f1d4c024bc3c433d9c05f0dbc55ea4/Cyrille%20Martraire), cela ne peut pas se manquer. Et clairement, ça a été mon **gros coup de coeur** sur cette édition 2014 de Devoxx France.
 Tout comme la conférence [Boucles étranges : étranges boucles (puzzlers et curiosités)](http://www.devoxx.com/display/FR13/Boucles+etranges+++etranges+boucles+%28puzzlers+et+curiosites%29) d'Eric lors de Devoxx France 2013, difficile de retranscrire ici le contenu de cette session, qui essayait de nous montrer comment l'art et le développement peuvent cohabiter.
 Tous les ingrédients d'une excellente présentation étaient présent : présentateurs plein d'énergie et parfaitement complémentaires, des informations intéressantes, de l'humour et des cookies (très bons d'ailleurs). Je recommande sur Parleys, même si la vidéo sera sans doute un peu moins bonne que le live...
+
+##[Pourquoi vous devriez essayer sérieusement les Object Calisthenics](http://cfp.devoxx.fr/devoxxfr2014/talk/JSH-188/Pourquoi%20vous%20devriez%20essayer%20s%C3%A9rieusement%20les%20Object%20Calisthenics)
+
+Un Quickie très intéressant par [Guillaume Duquesnay](http://cfp.devoxx.fr/devoxxfr2014/speaker/9b4fefab030e99d7c2ac41ea9f5416bb7f4ff7a0/Guillaume%20Duquesnay) qui nous parle de la programmation avec des objects calisthéniques. Mais qu'est-ce que c'est ? Hé bien ce n'est rien de plus que de la programmation en s'infligeant des contraintes fortes qui sont les suivantes :
+
+* un seul niveau d’indentation par méthode (pour éviter les ```if``` imbriqués par exemple) ;
+* pas de ```else``` ;
+* encapsuler tous les types primitifs et ```String``` ;
+* un seul point par ligne ;
+* pas d’abréviation (pour les noms des variables) ;
+* limiter la taille des entités (petites classes par ex.) ;
+* pas plus de deux variables d’instance par classe ;
+* utiliser des collections "first class" (pas sûr de trouver une bonne traduction pour ça), c'est-à-dire de ne pas utiliser par exemple des ```List<String> usernames``` mais plutôt une classe plus explicite, comme par exemple ```Usernames```.
+* pas de getter / setter / properties
+
+Bon, malheureusement j'ai dû m'eclipser avant la fin de la session, je n'ai donc pas pu entendre ce que ce type de programmation a pu apporter à l'orateur dans sa façon de développer. Mais en tout cas, j'aimerais bien m'y frotter, plus par défi intellictuel qu'autre chose. Peut-être lors d'un coding dojo ?
 
 
 # Sponsoring SG
@@ -60,3 +77,4 @@ Autre intérêt non négligeable du jeu : c'est un développement interne, une a
 
 Bien que je n'ai vu que très peu de conférences - j'ai même raté l'enregistrement des Cast Codeurs pour démonter note stand - j'ai encore apprécié cette édition de Devoxx France. L'ambiance, les rencontres, le partage est toujours le point fort de cette conférence, 
 
+Le rendez-vous est donc pris pour l'année prochaine, mais cette fois-ci au **Palais des Congrès** ! Le Marriott - et sa magnifique moquette - va sans doute nous manquer, mais la taille critique de 1500 développeurs était atteinte et il devenait urgent de viser plus haut. C'est donc chose faite !
